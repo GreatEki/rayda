@@ -1,0 +1,26 @@
+
+.nav {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;;
+    font-size: 1.5rem;
+}
+
+.notification {
+    position: relative;
+    /* border: 1px solid green; */
+}
+
+.alert {
+    position: absolute;
+    background-color: #F04438;
+    padding: .5rem .9rem;
+    border: 1px solid green;
+    border-radius: 50%;
+    color:#FFFFFF;
+    border: none;
+    font-size: 12px;
+    top: 20px;
+    left: 20px;
+}
