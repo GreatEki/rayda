@@ -1,0 +1,63 @@
+.auctionCard {
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 30px lightgray;
+    border-radius: 10px;
+    margin: 3rem 0;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bannerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 3rem .8rem 15rem;
+}
+
+.acceptInvite {
+    border: 1px solid #D0D5DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 1.5rem;
+    border-radius: 10px;
+}
+
+.acceptInviteText {
+    font: normal bold 18px/30px var(--font);
+}
+
+.siteStatus {
+    display: flex;
+    align-items: center;
+    gap: 0px 1.5rem;
+    padding-left: 15rem;
+}
+
+.notLive {
+    color:  #B54708;
+    font-size: 18px;
+    padding: .2rem 1rem;
+    background-color: #FFFAEB;
+    width: fit-content;
+}
+
+.layers {
+    font-size: 18px;
+    font-weight: normal;
+    color: #475467;
+    background: none;
+
+}
+
+.logo {
+    position: absolute;
+    width: fit-content;
+    object-fit: contain;
+    top: 55%;
+    left: 75px;
+}

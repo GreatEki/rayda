@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Home from "src/pages/HOME/Home";
 import "./App.css";
 
