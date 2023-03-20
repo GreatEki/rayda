@@ -1,5 +1,5 @@
 import React from "react";
-// import { Logo, Banner } from "src/components";
+import { Button } from "src/components";
 import { Logo, BannerImg } from "src/assets";
 import styles from "./AuctionCard.module.css";
 import { AiOutlineLike } from "react-icons/ai";
@@ -14,10 +14,10 @@ const AuctionCard = () => {
           <h2>Starts in: 3 days: 2 hours : 24 minutes </h2>
         </div>
 
-        <i className={styles.acceptInvite}>
+        <Button>
           <AiOutlineLike size={25} /> &nbsp;{" "}
           <span className={styles.acceptInviteText}> Accept Invite </span>
-        </i>
+        </Button>
       </div>
 
       <div className={styles.siteStatus}>

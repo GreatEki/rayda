@@ -1,4 +1,5 @@
 import AuctionCard from "./AuctionCard/AuctionCard";
+import FeaturedItem from "./FeaturedItems/FeaturedItem";
 import { Header } from "src/components";
 import styles from "./Home.module.css";
 
@@ -8,6 +9,8 @@ const Home = () => {
       <Header />
 
       <AuctionCard />
+
+      <FeaturedItem />
     </div>
   );
 };
