@@ -15,7 +15,6 @@
 .bannerInfo {
     display: flex;
     position: relative;
-    
 }
 
 
@@ -25,10 +24,17 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+    .logoBox {
+        display: none;
+    }
+}
+
 
 .logo {
     position: absolute;
     top: -50px;
+
 }
 
 .details {
@@ -37,6 +43,21 @@
     justify-content: space-between;
     padding: 1rem 5rem 1rem 0;
 }
+
+@media screen  and (max-width: 1024px) {
+    .details {
+        padding: 1rem;
+    }
+}
+
+@media screen  and (max-width: 767px) {
+    .details {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+}
+
 
 .siteStatus {
     display: flex;

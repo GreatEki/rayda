@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 const Header = () => {
   return (
     <nav className={styles.nav}>
-      <div>
+      <div className={styles.welcome}>
         <h2> Welcome </h2>
         <p> Your current sales auction and activity </p>
       </div>
