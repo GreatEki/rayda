@@ -14,7 +14,7 @@ const Card = (props: Props) => {
     const names = name.split(" ");
     const firstNameInitial = names[0].charAt(0);
     const lastNameInitial = names[1].charAt(0);
-    const initials = `${firstNameInitial} ${lastNameInitial}`;
+    const initials = `${firstNameInitial}${lastNameInitial}`;
 
     return initials.toUpperCase();
   }
