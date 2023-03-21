@@ -1,28 +1,29 @@
 import React from "react";
 import { ImageLaptop } from "src/assets";
 import styles from "./Card.module.css";
+import { Product } from "src/redux/types";
 
-const Card = () => {
+interface Props {
+  product: Product;
+}
+
+const Card = (props: Props) => {
+  const { product } = props;
   return (
     <div className={styles.card}>
-      <img src={ImageLaptop} alt="stock" className={styles.stock}></img>
+      <img src={product.image} alt="stock" className={styles.stock}></img>
 
       <div className={styles.cardBody}>
         <div>
           <span className={styles.avatar}>KO</span>
-          <span className={styles.username}> Koray Okumus </span>
+          <span className={styles.username}> {product.name} </span>
           <span className={styles.highestBidder}> (Highest Bidder)</span>
         </div>
 
-        <article className={styles.productDesc}>
-          Apple Macbook Air 13" M1 Chip 8GB 256GB 2020 Model - Rose Gold
-        </article>
+        <article className={styles.productDesc}>{product.title}</article>
 
         <p className={styles.bid}>
-          Current Bid:{" "}
-          <span className={styles.bidAmount}>
-            <del className={styles.del}>N</del>795, 000{" "}
-          </span>
+          Current Bid: <span className={styles.bidAmount}>{product.bid}</span>
         </p>
       </div>
 
