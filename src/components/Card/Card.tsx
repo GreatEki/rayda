@@ -9,14 +9,26 @@ interface Props {
 
 const Card = (props: Props) => {
   const { product } = props;
+
+  function getNameInitials(name) {
+    const names = name.split(" ");
+    const firstNameInitial = names[0].charAt(0);
+    const lastNameInitial = names[1].charAt(0);
+    const initials = `${firstNameInitial} ${lastNameInitial}`;
+
+    return initials.toUpperCase();
+  }
+
   return (
     <div className={styles.card}>
       <img src={product.image} alt="stock" className={styles.stock}></img>
 
       <div className={styles.cardBody}>
         <div>
-          <span className={styles.avatar}>KO</span>
-          <span className={styles.username}> {product.name} </span>
+          <span className={styles.avatar}>
+            {getNameInitials(product?.name)}
+          </span>
+          <span className={styles.username}>{product.name}</span>
           <span className={styles.highestBidder}> (Highest Bidder)</span>
         </div>
 
