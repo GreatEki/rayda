@@ -14,29 +14,36 @@
 
 .bannerInfo {
     display: flex;
-    justify-content: space-between;
-    padding: .8rem 3rem .8rem 15rem;
+    position: relative;
+    
 }
 
-.acceptInvite {
-    border: 1px solid #D0D5DD;
+
+.logoBox {
+    flex: .7;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 5px 1.5rem;
-    border-radius: 10px;
 }
 
-.acceptInviteText {
-    font: normal bold 18px/30px var(--font);
+
+.logo {
+    position: absolute;
+    top: -50px;
+}
+
+.details {
+    flex: 3.3;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem 1rem 0;
 }
 
 .siteStatus {
     display: flex;
-    align-items: center;
-    gap: 0px 1.5rem;
-    padding-left: 15rem;
+    gap: 10px;
+    margin-top: 1rem;
 }
+ 
 
 .notLive {
     color:  #B54708;
@@ -51,13 +58,4 @@
     font-weight: normal;
     color: #475467;
     background: none;
-
-}
-
-.logo {
-    position: absolute;
-    width: fit-content;
-    object-fit: contain;
-    top: 55%;
-    left: 75px;
 }
